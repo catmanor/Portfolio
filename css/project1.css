@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(245, 245, 245);
+    font-weight: lighter;
+}
+
+h2 {
+    color: #444D56;
+}
+
+h3, p {
+    color: #6A737D;
+}
+
+/* styling about-us item */
+.project1-section {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+/* project1-detail-area */
+.project1-title-area {
+    background-color: white;
+    margin-bottom: 5rem;
+}
+
+.project1-title-area h2 {
+    font-size: 2.3rem;
+    font-weight: lighter;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.project1-title-area h3 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.detail-content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.content-up {
+    padding-bottom: 1rem;
+}
+
+/* Styling for the Plan area */
+.project1-plan-area {
+    background-color: white;
+}
+
+.project1-plan-area h3 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
