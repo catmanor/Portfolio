@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+}
+
+.hello-section, .overview-section, .project-section, .contact-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Styling for Hello section */
+.hello-section {
+    position: relative;
+    margin-top: 2rem;
+    /* margin-bottom: 5rem; */
+    margin-bottom: 0;
+    height: 95vh;
+}
+
+.hello-color {
+    height: 100%;
+    width: 100%;
+}
+
+.color-left {
+    background-color: #98bec8;
+}
+
+.color-right {
+    background-color: rgb(250, 250, 250);
+}
+
+.layout-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hello-title h1{
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.hello-title p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Styling for subtitle heading 1 */
+.subtitle-h1 {
+    position: absolute;
+    font-size: 8rem;
+    margin-top: -6.5rem;
+    z-index: 10;
+}
+
+
+/* Styling for Overview section */
+.overview-section {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 16rem;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.overview-content {
+    background-color: #fdf0ec;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.overview-content p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1.5rem;
+}
+
+/* Styling for Project section */
+.project-section {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 16rem;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.project1-content {
+    background-color: #98bec8;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.project2-content {
+    background-color: #98bec8;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 10rem;
+}
+
+.project1-content h2, .project2-content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.project1-content img, .project2-content img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Styling for Contact section */
+.contact-section {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-top: 16rem;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.contact-content {
+    background-color: #fdf0ec;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contact-left img {
+    width: 4rem;
+    height: auto;
+    padding-right: 2rem;
+}
