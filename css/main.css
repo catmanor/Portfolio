@@ -49,13 +49,14 @@ body {
     z-index: 1;
 }
 
-.bio {
+.title-name {
     position: relative;
-    top: 15rem;
-    border: thin solid black;
+    top: 18rem;
+    font-size: 2rem;
     text-align: center;
     margin-left: 8rem;
     margin-right: 8rem;
+    color: #24305e;
 }
 /* End of the cover section */
 
@@ -111,7 +112,7 @@ body {
 }
 
 .project1-content {
-    background-color: #98bec8;
+    background-color: #f8e9a1;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -122,7 +123,7 @@ body {
 }
 
 .project2-content {
-    background-color: #98bec8;
+    background-color: #f8e9a1;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -174,6 +175,7 @@ body {
     border-radius: 0.5rem;
     color: #374785;
     font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 
@@ -201,7 +203,7 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
     width: 100%;
     height: 20rem;
     padding: 10rem;
-    background-color: blueviolet;
+    background-color: #a8d0e6;
 }
 
 .panels div.front {
@@ -209,7 +211,7 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
     width: 100%;
     height: 20rem;
     padding: 10rem;
-    background-color: yellowgreen;
+    background-color: #374785;
 }
 
 .panels li:hover div.front {
@@ -246,6 +248,10 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
     width: 4rem;
     height: auto;
     padding-right: 2rem;
+}
+
+.paragraph-up{
+    margin-bottom: 3rem;
 }
 
 

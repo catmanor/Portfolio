@@ -41,13 +41,13 @@ p {
     box-sizing: border-box;
 }
 
-#pop-up input{
+/* #pop-up input{
     padding: 1.5rem;
     border: 0;
     border-radius: 0.5rem 0 0 0.5rem;
     border: 1px solid #333;
     font-size: 1.2rem;
-}
+} */
 
 #pop-up img {
     width: 20rem;
@@ -55,13 +55,14 @@ p {
 }
 
 button{
-    padding: 1.5rem;
+    padding: 1.2rem;
     border: 0;
     color: #fff;
     background: #333;
     margin-left: -5px;
     margin-left: -5px;
-    border-radius: 0 0.5rem 0.5rem 0;
+    /* border-radius: 0 0.5rem 0.5rem 0; */
+    border-radius: 0.5rem;
     border: 1px solid #333;
     font-size: 1.2rem;
 }
