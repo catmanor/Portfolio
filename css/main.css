@@ -1,37 +1,65 @@
 body {
     font-family: 'Montserrat', sans-serif;
     /* font-weight: bold; */
+    width: 100%;
+    height: 100%;
 }
 
-.cover-section, .hello-section, .about-section, .project-section, .contact-section {
+.hello-section, .about-section, .project-section, .contact-section {
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
+
+
 /* Styling for the Cover section */
 .cover-section {
-    background-color: #98bec8;
+    background-color: #a8d0e6;
+    height: 60vh;
 }
 
-.layout-center {
-    margin: 0;
+.cover-section h1 {
+    margin-top: 0;
+}
+
+/* Cloud animation is learned from
+ https://www.youtube.com/watch?v=aGuq1euvbYc&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5&index=9 
+*/
+.cloud {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+}
+
+.cloud:nth-child(1) {
+    width: 12rem;
+    top: 7rem;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+
+.cloud:nth-child(2) {
+    width: 18rem;
+    top: 0;
+    animation: wind 50s linear infinite reverse;
+}
+
+.sun {
+    position: absolute;
+    width: 12rem;
+    top: 0;
+    z-index: 1;
+}
+
+.bio {
+    position: relative;
+    top: 15rem;
+    border: thin solid black;
     text-align: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
+/* End of the cover section */
 
-.hello-title h1{
-    font-size: 10rem;
-    font-weight: 500;
-}
 
-.hello-title p{
-    font-size: 2rem;
-    font-weight: bold;
-}
 
 /* Styling for subtitle heading 1 */
 .subtitle-h1 {
@@ -136,3 +164,14 @@ body {
     height: auto;
     padding-right: 2rem;
 }
+
+
+/* The area of keyframes */
+
+/* keyframe of cloud */
+@keyframes wind {
+    from{left: -5rem}
+    to{left: 100%;}
+}
+
+/* The end of keyframes */
