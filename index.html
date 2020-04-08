@@ -11,21 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/processing.js"></script>
 </head>
 
 <body>
-
-    <!-- <section class="hello-section">
-        <div class="grid hello-color">
-            <div class="grid-col-1of2 color-left"></div>
-            <div class="grid-col-1of2 color-right"></div>
-        </div>
-        <div class="layout-center hello-title">
-            <h1>HELLO</h1>
-            <p>I'm Norris.</p>
-        </div>
-    </section> -->
-
     <section class="cover-section">
         <h1>Norris He</h1>
         <div>
@@ -47,13 +36,164 @@
         <div class="project1-content">
 
             <div class="grid">
-                <div class="grid-col-2of3">
-                    <img src="img/project1.png" alt="project 1">
+                <div class="grid-col-2of3 project-display">
+
+                    <!-- I learned how to insert processing file into html from
+                    https://www.youtube.com/watch?v=p9PGZCx0Zos -->
+                    <!-- The start of the processing code -- Alien -->
+                    <script type="text/processing">      
+                        void setup(){
+                            size(800, 600);
+                        }
+                        
+                        void draw(){
+                            println(mouseX + " : " + mouseY);
+                            background(240, 240, 240);
+                            float r = map(mouseX, 0, width, -PI/4, PI/4);
+                            float s = map(mouseY, 0, height, 0.5, 2);
+                            float rot = map(mouseX, 0, width, -2, 2);
+                        
+                            pushMatrix();
+                            translate(width/2, height/2);
+                            rotate(r);
+                            scale(s);
+                            
+                            //balls-big ball
+                        
+                            fill(115, 114, 137);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            ellipse(0, 90, 75, 55);
+                            
+                            //balls-center
+                            fill(242, 234, 84);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            ellipse(0, 90, 40, 30);
+                            
+                            //balls-left
+                            fill(242, 234, 84);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            ellipse(-50, 90, 40, 30);
+                            
+                            //balls-right
+                            fill(242, 234, 84);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            ellipse(50, 90, 40, 30);
+                            
+                            
+                            //dome
+                            fill(160, 168, 185);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            arc(0, 60, 130, 80, -PI, 0);
+                            
+                            //dome-tape
+                            fill(0);
+                            noStroke();
+                            rect(-64, 60, 128, 10);
+                            
+                            //dome-logo
+                            fill(220, 209, 56);
+                            noStroke();
+                            triangle(-10, 55, 10, 55, 0, 40);
+                            triangle(-10, 45, 10, 45, 0, 60);
+                            
+                            
+                            //dome-bottom
+                            fill(160, 168, 185);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            quad(-64, 70, 64, 70, 80, 90, -80, 90);
+                            
+                            //face-up
+                            fill(92, 24, 87);
+                            stroke(255);
+                            strokeWeight(0.5);
+                            arc(0, 0, 100, 100, -PI, 0);
+                            
+                            //face-down
+                            fill(92, 24, 87);
+                            stroke(255);
+                            strokeWeight(0.5);
+                            curve(0, -250, -50, -1, 50, -1, 0, -250);
+                            
+                            //head
+                            fill(92, 79, 177);
+                            stroke(255);
+                            strokeWeight(0.5);
+                            arc(0, -20, 90, 60, -PI, 0);
+                            
+                            //clothes
+                            fill(23, 13, 23);
+                            noStroke();
+                            quad(-44, 16, 44, 16, 40, 35, -40, 35);
+                            
+                            //eyes
+                            fill(255);
+                            stroke(0);
+                            strokeWeight(1);
+                            arc(-22, -10, 20, 25, 0, PI);
+                            arc(22, -10, 20, 25, 0, PI);
+                            arc(0, -30, 20, 25, 0 , PI);
+                            
+                            //eyes-line
+                            fill(0);
+                            noStroke();
+                            rect(-32, -11, 20, 3);
+                            rect(12, -11, 20, 3);
+                            rect(-10, -31, 20, 3);
+                            
+                            //eyes-balls
+                            fill(163, 148, 128);
+                            noStroke();
+                            ellipse(-22, -5, 5, 5);
+                            ellipse(22, -5, 5, 5);
+                            ellipse(0, -25, 5, 5);
+                            
+                            //nose
+                            fill(138, 131, 110);
+                            noStroke();
+                            triangle(-10, 5, 10, 5, 0, -5);
+                            
+                            //hat
+                            fill(136,199,229, 80);
+                            noStroke();
+                            curve(500, 650, -44, 16, 44, 16, -500, 650);
+                            
+                            
+                            //hands
+                            pushMatrix();
+                            translate(25, 35);
+                            rotate(rot);
+                            fill(92, 24, 87);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            triangle(-5, 0, 5, 0, -2, 20);
+                            popMatrix();
+                            
+                            pushMatrix();
+                            translate(-25, 35);
+                            rotate(rot);
+                            fill(92, 24, 87);
+                            stroke(0);
+                            strokeWeight(0.1);
+                            triangle(-5, 0, 5, 0, -2, 20);
+                            popMatrix();
+                                
+                            popMatrix();
+                        }
+                    </script>
+                    <canvas id="sample-alien"></canvas>
+                    <!-- End of the processing code -->
                 </div>
     
-                <div class="grid-col-1of3">
-                    <p>Processing - Alien</p>
-                    <button>View Alien</button>
+                <div class="grid-col-1of3 project-info">
+                    <h4>Processing - Alien</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printinore recently with desktop publishin versions of Lorem Ipsum</p>
+                    <a href="project1.html">View Alien</a>
                 </div>
             </div>
         </div>
@@ -63,13 +203,19 @@
             <img src="img/project2.png" alt="project 2"> -->
 
             <div class="grid">
-                <div class="grid-col-2of3">
-                    <img src="img/project2.png" alt="project 2">
+                <div class="grid-col-2of3 project-display">
+                    <ul class="panels">
+                        <li>
+                            <div class="front">Hello</div>
+                            <div class="back">Back</div>
+                        </li>
+                    </ul>
                 </div>
     
-                <div class="grid-col-1of3">
-                    <p>Android Studios - Focus</p>
-                    <button>View Focus</button>
+                <div class="grid-col-1of3 project-info">
+                    <h4>Android Studios - Manager</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printinore recently with desktop publishin versions of Lorem Ipsum</p>
+                    <a href="project1.html">View Alien</a>
                 </div>
             </div>
         </div>
