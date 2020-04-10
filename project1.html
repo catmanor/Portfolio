@@ -7,11 +7,12 @@
     <title>Project 1</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="css/project1.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script src="js/processing.js"></script>
 </head>
 
 <body>
@@ -43,22 +44,21 @@
         <section class="project-detail-section">
             <section class="project-intro">
                 <div class="align-center">
-                    <h1>Project Name: Alien</h1>
+                    <h1>Project - Alien</h1>
                 </div>
-                <p>
-                    ‘Alien’ is a two-dimension game for users to use mouse as their weapon to kill the aliens. The goal of the game is to make the content and drawing can be associated tightly. 
-                </p>
-                <div>
-                    Role: Application designer and developer
-                </div>
-                <div>Teammate: myself</div>
-                <div>
-                    Project scope: 3-week student project
-                </div>
-                <div>
-                    Tool: Processing
-                </div>
-            </section>
+                <ul>
+                    <li class="list-bold">Introduction:</li>
+                    <li class="border-bottom-line">‘Alien’ is a two-dimension game for users to use mouse as their weapon to kill the aliens. The goal of the game is to make the content and drawing can be associated tightly.</li>
+                    <li class="list-bold">Role:</li>
+                    <li class="border-bottom-line">designer and developer</li>
+                    <li class="list-bold">Teammate:</li>
+                    <li class="border-bottom-line">Me</li>
+                    <li class="list-bold">Project scope:</li>
+                    <li class="border-bottom-line">3-week student project</li>
+                    <li class="list-bold">Tool:</li>
+                    <li class="border-bottom-line">Processing</li>
+                </ul>
+            </section> 
 
             <section class="project-process">
                 <div>
@@ -66,7 +66,8 @@
                     <p>Since the project should be designed by ourselves, my first research is to look for graphic works online to get my inspiration. After a series of comparison and filtrating, a moon graph become my blueprint.
                         The second research was after the draft sketching and all the research is in processing.org website.  Since some special graphics and curves were not taught in class, and they were necessary for my design, I did those second researches.
                     </p>
-                    <img src="#" alt="research image">
+                    <!-- https://qz.com/1577156/pictures-of-the-super-worm-moon-the-last-one-of-2019/ -->
+                    <img src="img/moon.jpg" alt="research image">
                 </div>
 
                 <div>
@@ -75,7 +76,7 @@
                         Only the moon blueprint is too simple to construct a completed background so I added some elements of my hometown. 
     After that, I got a sudden idea because of the movie ‘Prometheus’, and decided to produce the scenes of alien invasion of earth. Therefore, the character was determined.
                     </p>
-                    <img src="#" alt="draft sktech image">
+                    <img src="img/alien-sketch.jpg" alt="draft sktech image">
                 </div>
 
                 <div>
@@ -83,7 +84,7 @@
                     <p>
                         Since the unfamiliarity with Processing, my coding process is not that smooth. When I met the trouble I didn’t know how to solve, I would look for the answers from processing websites or online tutorial videos. And then, I would change and test them in my own code. I think it’s a good method to work out most of problems, not only in Processing. 
                     </p>
-                    <img src="#" alt="coding & testing image">
+                    <img src="img/alien-coding.png" alt="coding & testing image">
                 </div>
 
                 <div>
@@ -91,7 +92,8 @@
                     <p>
                         The final result is to mix the work of background and alien together, and then add some special effect as my own bonus. 
                     </p>
-                    <img src="#" alt="result image">
+                    <!-- Tutorial coms from https://www.youtube.com/watch?v=QMwbghhOEtM -->
+                    <canvas data-processing-sources="js/AlienGame.pde"></canvas>
                 </div>
 
                 <div>

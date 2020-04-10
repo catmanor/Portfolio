@@ -40,7 +40,7 @@ text-align: center;
 .button-nav img {
     width: 10rem;
     height: 10rem;
-    background-color: cadetblue;
+    background-color: #a8d0e6;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -94,7 +94,7 @@ text-align: center;
   .sample-main-nav img {
     width: 10rem;
     height: 10rem;
-    background-color: cadetblue;
+    background-color: #a8d0e6;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -106,4 +106,47 @@ text-align: center;
 
 .sample-main-nav {
     text-align: center;
+}
+
+ul {
+    border: 1rem solid #5a5a5a;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+li.border-bottom-line {
+    border-bottom: 0.15rem solid #959DA5;
+}
+
+li.list-bold {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+}
+
+.sample-border {
+    height: 8rem;
+    width: 8rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1rem;
+}
+
+.sample-border span {
+    position: relative;
+    top: 45%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.white-border {
+    border: 0.25rem solid white;
 }

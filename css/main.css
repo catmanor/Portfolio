@@ -136,9 +136,25 @@ body {
 .project-nav img, .bio-nav img, .contact-nav img {
     width: 10rem;
     height: 10rem;
-    background-color: cadetblue;
+    /* background-color: #a8d0e6; */
     padding: 1rem;
     border-radius: 2rem;
+}
+
+.myBlue {
+    background-color: #a8d0e6;
+}
+
+.myRed {
+    background-color: #f76c6c;
+}
+
+.myYellow {
+    background-color: #f8e9a1;
+}
+
+.myGrey {
+    background-color: #e5e5ea;
 }
 /* End of the styling for three main navigation */
 
@@ -253,7 +269,7 @@ th, td {
 .project-section-left img, .project-section-right img {
     width: 10rem;
     height: 10rem;
-    background-color: cadetblue;
+    background-color: #a8d0e6;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -293,7 +309,6 @@ th, td {
 .style-guide img, .citation img, .github img {
     width: 10rem;
     height: 10rem;
-    background-color: cadetblue;
     padding: 1rem;
     border-radius: 2rem;
 }
