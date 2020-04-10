@@ -1,0 +1,109 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+.styleguide-content {
+    margin: 5rem;
+}
+
+.backboard {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: #e5e5ea;
+    border-radius: 2rem;
+}
+
+.sample-content h2 {
+    margin-bottom: 2rem;
+}
+
+.sample-content h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sample h3{
+    margin-bottom: 3rem;
+}
+  
+  /* 
+    INTERACTIVE ELEMENTS -------------------
+  */
+  
+  /* Styling for the navigation button */
+  .button-nav {
+text-align: center;
+}
+
+.button-nav img {
+    width: 10rem;
+    height: 10rem;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.button-nav span {
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+  /* Styling for the in-text-link */
+.in-text-link{
+    padding-left: 5.5rem;
+    text-decoration: none;
+    color: #5a5a5a;
+}
+.sample-back-bar {
+    width: 15rem;
+    height: 1rem;
+    background-color: grey;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+  
+  
+  
+  /* 
+    TEXT ELEMENTS -------------------
+  */
+  
+  /* Styling for headings */
+  h1 {
+      font-size: 3rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  h3 {
+      font-size: 1.2rem;
+  }
+  
+  
+  
+  /* 
+    COMBINED ELEMENTS -------------------
+  */
+
+  /* Styling for Main Navigation */
+  .sample-main-nav img {
+    width: 10rem;
+    height: 10rem;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.sample-main-nav span {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.sample-main-nav {
+    text-align: center;
+}

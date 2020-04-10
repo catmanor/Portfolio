@@ -47,6 +47,17 @@ body {
     left: 37%;
 }
 
+.dot {
+    position: absolute;
+    background-color: #5a5a5a;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+    top: -0.5rem;
+    left: 60%;
+}
+
 /* End of the styling for the phone layout */
 
 
@@ -67,9 +78,9 @@ body {
     vertical-align: text-bottom;
 }
 
-.message {
+/* .message { */
     /* font-weight: lighter; */
-}
+/* } */
 
 .now {
     position: absolute;

@@ -160,15 +160,15 @@
 
         <!-- Start of the contact section -->
         <section id="contact-section" class="contact-section grid">
-            <div class="grid-col-1of3 style-guide">
+            <div onclick="goToStyleGuide()" class="grid-col-1of3 style-guide">
                 <img src="img/twitter.png" alt="style guide">
                 <span>Style Guide</span>
             </div>
-            <div class="grid-col-1of3 citation">
+            <div onclick="goToCitation()" class="grid-col-1of3 citation">
                 <img src="img/twitter.png" alt="citation">
                 <span>Citation</span>
             </div>
-            <div class="grid-col-1of3 github">
+            <div onclick="goToGithub()" class="grid-col-1of3 github">
                 <img src="img/twitter.png" alt="github">
                 <span>Github</span>
             </div>
@@ -289,6 +289,18 @@
     <script>
         function goToContact() {
             window.location = "#contact-section";
+        }
+
+        function goToStyleGuide() {
+            window.location = "styleguide.html";
+        }
+
+        function goToCitation() {
+            window.location = "citation.html";
+        }
+
+        function goToGithub() {
+            window.location = "https://github.com/garbagecenter/Portfolio";
         }
     </script>
     <!-- End of JavaScript -->
