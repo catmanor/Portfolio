@@ -5,27 +5,333 @@ body {
     height: 100%;
 }
 
+
+/* Styling for the phone layout */
+.phone-layout {
+    border: 2rem solid #050505;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.camera-part {
+    width: 30rem;
+    height: 5rem;
+    background-color: #050505;
+    /* margin: 0 auto; */
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.time{
+    text-align: center;
+}
+
+.time p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.signal img, .wifi img , .battery img {
+    width: 4rem;
+    padding: 1rem;
+}
+
+.decoration {
+    position: absolute;
+    background-color: #5a5a5a;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 3rem;
+    z-index: 1;
+    top: -0.5rem;
+    left: 37%;
+}
+
+/* End of the styling for the phone layout */
+
+
+/* Start of the styling for notice section */
+.notice-section {
+    background-color: #e5e5ea;
+    opacity: 0.8;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.notice-up {
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 3rem;
+    vertical-align: text-bottom;
+}
+
+.message {
+    /* font-weight: lighter; */
+}
+
+.now {
+    position: absolute;
+    right: 2rem;
+}
+
+.notice-bottom {
+    font-size: 3rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.notice-bottom span {
+    font-weight: 500;
+}
+
+.notice-bottom p {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+/* End of the styling for notice section */
+
+
+
+/* Start of the styling for three main navigation */
+.main-nav {
+    width: 100%;
+    height: 70vh;
+    /* border: thin solid blue; */
+}
+
+.project-nav, .bio-nav, .contact-nav {
+    height: 10rem;
+    margin: auto 0;
+    /* border: thin solid black; */
+    text-align: center;
+}
+
+.project-nav span {
+    display: block;
+    font-size: 2rem;
+}
+
+.bio-nav span {
+    display: block;
+    font-size: 2rem;
+}
+
+.contact-nav span {
+    display: block;
+    font-size: 2rem;
+}
+
+.project-nav img, .bio-nav img, .contact-nav img {
+    width: 10rem;
+    height: 10rem;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+/* End of the styling for three main navigation */
+
+
+/* Start of the styling for About Me section */
+.about-me-section {
+    width: 100%;
+    height: 100vh;
+    /* border: thin solid blue; */
+}
+
+.about-me-content {
+    width: 100%;
+    height: 100%;
+}
+
+.img-side {
+    /* border: thin solid rebeccapurple; */
+    text-align: center;
+    margin: auto 0;
+}
+
+.mark-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+.img-side span {
+    display: inline-block;
+}
+
+.me {
+    width: 20rem;
+    height: 20rem;
+}
+
+.star {
+    width: 3rem;
+    height: 3rem;
+}
+
+.paragraph-side {
+    margin: auto 0;
+}
+
+.paragraph-side h2 {
+    font-size: 2.5rem;
+    margin: 3rem;
+}
+
+.paragraph-side p {
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.back-area {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    /* border: thin solid green; */
+    /* margin-top: 10rem; */
+    position: absolute;
+    bottom: 0;
+}
+
+.back-bar {
+    width: 15rem;
+    height: 1rem;
+    background-color: grey;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+/* End of the styling for About Me section */
+
+
+
+/* Start of the styling for Project section */
+.project-section {
+    width: 100%;
+    height: 100vh;
+    /* border: thin solid blue; */
+    text-align: center;
+}
+
+.project-section h2 {
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.icon-area {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 25%;
+    left: 25%;
+    background: rgba(229, 229, 234, 0.3); /* #f2f2fa*/
+    border-radius: 3rem;
+}
+
+.project-section-left, .project-section-right {
+    height: 10rem;
+    margin: auto 0;
+    /* border: thin solid black; */
+    text-align: center;
+}
+
+.project-section-left img, .project-section-right img {
+    width: 10rem;
+    height: 10rem;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.project-section-left span {
+    display: block;
+    font-size: 2rem;
+}
+
+.project-section-right span {
+    display: block;
+    font-size: 2rem;
+}
+
+/* End of the styling for Project section */
+
+
+
+/* Start of the styling for contact section */
+.contact-section {
+    width: 90%;
+    height: 20vh;
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+    background-color: #e5e5ea;   
+    position: relative;
+    left: 5%;
+}
+
+.style-guide, .citation, .github {
+    height: 10rem;
+    margin: auto 0;
+    /* border: thin solid black; */
+    text-align: center;
+}
+
+.style-guide img, .citation img, .github img {
+    width: 10rem;
+    height: 10rem;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.style-guide span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.citation span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.github span {
+    display: block;
+    font-size: 1.5rem;
+}
+/* End of the styling for contact section */
+
+
+
+
+
+
+
+
+/* 
 .hello-section, .about-section, .project-section, .contact-section {
     margin-left: 5rem;
     margin-right: 5rem;
-}
+} */
 
 
 
 /* Styling for the Cover section */
-.cover-section {
+/* .cover-section {
     background-color: #a8d0e6;
     height: 60vh;
 }
 
 .cover-section h1 {
     margin-top: 0;
-}
+} */
 
 /* Cloud animation is learned from
  https://www.youtube.com/watch?v=aGuq1euvbYc&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5&index=9 
 */
-.cloud {
+/* .cloud {
     position: absolute;
 }
 
@@ -57,22 +363,22 @@ body {
     margin-left: 8rem;
     margin-right: 8rem;
     color: #24305e;
-}
+} */
 /* End of the cover section */
 
 
 
 /* Styling for subtitle heading 1 */
-.subtitle-h1 {
+/* .subtitle-h1 {
     position: absolute;
     font-size: 8rem;
     margin-top: -6.5rem;
     z-index: 10;
-}
+} */
 
 
 /* Styling for AboutMe section */
-.about-section {
+/* .about-section {
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
@@ -100,10 +406,10 @@ body {
     width: 100%;
     height: auto;
     padding-left: 5rem;
-}
+} */
 
 /* Styling for Project section */
-.project-section {
+/* .project-section {
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
@@ -176,13 +482,13 @@ body {
     color: #374785;
     font-weight: bold;
     padding: 0.5rem 1rem;
-}
+} */
 
 
 /* I learned the flipping animation from
 https://www.youtube.com/watch?v=QhKdOrOh90w */
 /* The start of the Flip tutoruil */
-.panels {
+/* .panels {
     list-style-type: none;
 }
 
@@ -219,7 +525,7 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
 }
 .panels li:hover div.back {
     animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
+} */
 /* The end of the fliping animation */
 
 
@@ -227,7 +533,7 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
 
 
 /* Styling for Contact section */
-.contact-section {
+/* .contact-section {
     position: relative;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -248,25 +554,25 @@ https://www.youtube.com/watch?v=QhKdOrOh90w */
     width: 4rem;
     height: auto;
     padding-right: 2rem;
-}
+} */
 
-.paragraph-up{
+/* .paragraph-up{
     margin-bottom: 3rem;
-}
+} */
 
 
 /* Animation Area */
 
 /* keyframe of cloud */
-@keyframes wind {
+/* @keyframes wind {
     from{left: -5rem}
     to{left: 100%;}
 }
 
 /* keyframe of fliping */
-@keyframes twirl {
+/* @keyframes twirl {
     0%{transform: rotateY(0deg);}
     100%{transform: rotateY(90deg);}
-}
+} */ 
 
 /* The end of animation area */
