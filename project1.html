@@ -7,6 +7,7 @@
     <title>Project 1</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/project1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
@@ -14,89 +15,108 @@
 </head>
 
 <body>
-        <!-- Project 1 Title Section-->
-        <section class="project1-section">
+    <section class="phone-layout">
 
-            <!-- title and detail -->
-            <section id="title" class="project1-title-area">
+        <div class="grid">
+            <div class="grid-col-1of3 time"><p>12:00</p></div>
+            <div class="grid-col-1of3 camera-part"></div>
+            <div class="grid-col-1of3 icons grid">
+                <!-- <div class="grid"> -->
+                    <div class="signal grid-col-1of3">
+                        <img src="img/internet.png" alt="1">
+                    </div>
+                    <div class="wifi grid-col-1of3">
+                        <img src="img/wifi.png" alt="2">
+                    </div>
+                    <div class="battery grid-col-1of3">
+                        <img src="img/battery1.png" alt="3">
+                    </div>                          
+                <!-- </div>   -->
+            </div>
+        </div>
+                
+        <div class="decoration"></div>
+        <div class="dot"></div>
+
+
+        <!-- Start of Project section -->
+        <section class="project-detail-section">
+            <section class="project-intro">
                 <div class="align-center">
-                    <h2>Project 1 - Processing</h2>
-                    <h3>Background</h3>
+                    <h1>Project Name: Alien</h1>
                 </div>
-                <div class="align-left detail-content">
-                    <p class="content-up">
-                        The name of the project is Aliens. The goal of the project is to practice the click 
-                        event and to train the ability about variable calculating in processing. I’m the 
-                        graphic designer and application developer, and completed it by myself. 
-                        The project was a three-week student project and also a freelance project for the 
-                        client. The tool and techniques I used in the application is Processing and PVector.
-
-                    </p>
+                <p>
+                    ‘Alien’ is a two-dimension game for users to use mouse as their weapon to kill the aliens. The goal of the game is to make the content and drawing can be associated tightly. 
+                </p>
+                <div>
+                    Role: Application designer and developer
+                </div>
+                <div>Teammate: myself</div>
+                <div>
+                    Project scope: 3-week student project
+                </div>
+                <div>
+                    Tool: Processing
                 </div>
             </section>
 
-            <section class="project1-plan-area">
-                <div class="align-center">
-                    <h3>Analysis</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <p class="content-up">
-                        Alien is a two-dimension game for users to use mouse as their weapon to kill the aliens. The goal of the game is to make the content and drawing can be associated tightly. 
-
-Outline for solving the problem: Hard to calculate objects collision accurately </p>
-<ul>
-    <li>Did the research online </li>
-    <li>Add visible bound to objects and test</li>
-    <li>Debug</li>
-    <li>Checked any problems may happen</li>
-    <li>Make the visible bound line invisible</li>
-</ul>
-<p>
-The research online was the first thing. And then, I added bound line to the target object. It’s easy for me to check whether the new method work or not. Next, tested and debugged again and again. After that, I checked the possible cases that might make errors. Finally, I cancel the bound lines, which is not needed in the final project.
-
-The result is that object collision can be checked accurately. I solved the problem through the outline above. In this program, I think some auxiliary items are helpful for us to find and solve the problems.
-
+            <section class="project-process">
+                <div>
+                    <h2>Research:</h2>
+                    <p>Since the project should be designed by ourselves, my first research is to look for graphic works online to get my inspiration. After a series of comparison and filtrating, a moon graph become my blueprint.
+                        The second research was after the draft sketching and all the research is in processing.org website.  Since some special graphics and curves were not taught in class, and they were necessary for my design, I did those second researches.
                     </p>
+                    <img src="#" alt="research image">
                 </div>
-            </section>
 
-            <!-- <section class="project1-plan-area">
-                <div class="align-center">
-                    <h3>Process</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <p class="content-up"></p>
-                        
+                <div>
+                    <h2>Draft Sketch:</h2>
                     <p>
-                        
+                        Only the moon blueprint is too simple to construct a completed background so I added some elements of my hometown. 
+    After that, I got a sudden idea because of the movie ‘Prometheus’, and decided to produce the scenes of alien invasion of earth. Therefore, the character was determined.
                     </p>
+                    <img src="#" alt="draft sktech image">
                 </div>
-            </section> -->
 
-            <section class="project1-plan-area">
-                <div class="align-center">
-                    <h3>Result</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <p class="content-up">
-                        Here is the final project sample.
+                <div>
+                    <h2>Coding and testing:</h2>
+                    <p>
+                        Since the unfamiliarity with Processing, my coding process is not that smooth. When I met the trouble I didn’t know how to solve, I would look for the answers from processing websites or online tutorial videos. And then, I would change and test them in my own code. I think it’s a good method to work out most of problems, not only in Processing. 
                     </p>
-                       
-                    <img src="img/project1.png" alt="project1">
+                    <img src="#" alt="coding & testing image">
+                </div>
+
+                <div>
+                    <h2>Final Results:</h2>
+                    <p>
+                        The final result is to mix the work of background and alien together, and then add some special effect as my own bonus. 
+                    </p>
+                    <img src="#" alt="result image">
+                </div>
+
+                <div>
+                    <h2>Challenge: </h2>
+                    <p>
+                        That was my first experience with Processing. Before that,  I only learned a little bit Python, and the experience of Python didn’t give me too much help on that project. Many ideas in my mind were prevented from a variety of technical problems. Therefore, I try my best to achieve the effect what I could do that time. During the process, I also met several problems caused by unfamiliarity with Processing. Since that, this experience became my motivation to learn more languages and computing skills later. 
+                    </p>
                 </div>
             </section>
         </section>
+        <!-- End of Project section --> 
 
-        <footer>
-            <div class="grid">
-                <div class="grid-col-1of2 align-center goToTop">
-                    <a href="#title">Go To Top</a>
-                </div>
-                <div class="grid-col-1of2 align-center seeMore">
-                    <a href="portfolio.html">See more</a>
-                </div>
-            </div>
-        </footer>
+
+        <div onclick="backHome()" class="back-area">
+            <span>Go back</span>
+            <div class="back-bar"></div>
+        </div>
+        
+        <script>
+            function backHome() {
+                window.location = "index.html";
+            }
+        </script>
+    </section>
+
 </body>
 
 </html>

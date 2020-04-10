@@ -7,103 +7,118 @@
     <title>Project 2</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="css/project2.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <!-- Project 2 Title Section-->
-        <section class="project2-section">
+    <section class="phone-layout">
 
-            <!-- title and detail -->
-            <section id="title" class="project2-title-area">
-                <div class="align-center">
-                    <h2>Project 2 - Android Studios</h2>
-                    <h3>Background</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <p class="content-up">
-                        The name of the project is Manager. I’m the software designer and developer of the application, and completed it by myself. The project was a term ending project and also a freelance project for the client. The tool and techniques I used in the application is Android Studios, camera sensor and SQL database.                    </p>
-                </div>
-            </section>
-
-            <section class="project2-plan-area">
-                <div class="align-center">
-                    <h3>Analysis</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <p class="content-up">
-                        Focus is an application for users to avoid spending too much time on smart phone but focus on their study and work. In the application, users can set a time to countdown, and then they cannot use their smart phone during the setting time. 
-
-Outline for solving the problem: When the sensor was called frequently, application would crash.
- </p>
-<ul>
-    <li>Did the research online </li>
-    <li>Took a note to record the research</li>
-    <li>Changed the code correspond to the related note</li>
-    <li>Test</li>
-    <li>Checked any problems may happen</li>
-</ul>
-<p>
-    The research online was the first thing. And then, I recorded different methods to solve the problems because every case was different. According to the related notes, I tried them in my coding. Tested and debugged. Finally, I checked the possible cases that might make error.
-
-    The result of the application will not crash whatever situation it was. I solved the problem through the outline above. I think it’s important to understand the solving method learned from online research before use it into own application. 
-    
-                    </p>
-                </div>
-            </section>
-
-            <section class="project2-plan-area">
-                <div class="align-center">
-                    <h3>Initial Sketch</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <div class="grid">
-                        <div class="grid-col-1of2 sketch-area">
-                            <img src="img/sketch1.jpg" alt="sketch1">
-                        </div>
-                        <div class="grid-col-1of2 sketch-area">
-                            <img src="img/sketch2.jpg" alt="sketch2">
-                        </div>
+        <div class="grid">
+            <div class="grid-col-1of3 time"><p>12:00</p></div>
+            <div class="grid-col-1of3 camera-part"></div>
+            <div class="grid-col-1of3 icons grid">
+                <!-- <div class="grid"> -->
+                    <div class="signal grid-col-1of3">
+                        <img src="img/internet.png" alt="1">
                     </div>
-                    <!-- <div class="sketch-area">
-                        <img src="img/sketch3.jpg" alt="sketch2">
-                        <img src="img/sketch4.jpg" alt="sketch2">
-                    </div> -->
-                </div>
-            </section>
-
-            <section class="project2-plan-area">
-                <div class="align-center">
-                    <h3>Result</h3>
-                </div>
-                <div class="align-left detail-content">
-                    <div class="grid">
-                        <div class="grid-col-1of2 sketch-area">
-                            <img src="img/plan.png" alt="sketch1">
-                        </div>
-                        <div class="grid-col-1of2 sketch-area">
-                            <img src="img/sensor.png" alt="sketch2">
-                        </div>
+                    <div class="wifi grid-col-1of3">
+                        <img src="img/wifi.png" alt="2">
                     </div>
-                </div>
-            </section>
-
-        </section>
-
-
-        <footer>
-            <div class="grid">
-                <div class="grid-col-1of2 align-center goToTop">
-                    <a href="#title">Go To Top</a>
-                </div>
-                <div class="grid-col-1of2 align-center seeMore">
-                    <a href="portfolio.html">See more</a>
-                </div>
+                    <div class="battery grid-col-1of3">
+                        <img src="img/battery1.png" alt="3">
+                    </div>                          
+                <!-- </div>   -->
             </div>
-        </footer>
+        </div>
+                
+        <div class="decoration"></div>
+        <div class="dot"></div>
+
+
+        <!-- Start of Project section -->
+        <section class="project-detail-section">
+            <section class="project-intro">
+                <div class="align-center">
+                    <h1>Project Name: Manager</h1>
+                </div>
+                <p>
+                    ‘Manager’ is an application aim to provide the service to help the user to remember the petty things. Besides, it can also detect the environment surrounding and give related suggestions to users according to detected information. In sum, it’s designed to improve users’ efficiency of work and study.                 </p>
+                <div>
+                    Role: Application designer and developer
+                </div>
+                <div>Teammate: myself</div>
+                <div>
+                    Project scope: 6-week student project
+                </div>
+                <div>
+                    Tool: Android Studios
+                </div>
+            </section>
+
+            <section class="project-process">
+                <div>
+                    <h2>Brainstorms:</h2>
+                    <p>The first challenge of the project was how to mix all the requirements and get a whole application, but not just put different unrelated functionalities together. For this challenge, I prepared three version of proposals.
+                    </p>
+                    <img src="#" alt="brainstorms image">
+                </div>
+
+                <div>
+                    <h2>Research:</h2>
+                    <p>
+                        When the proposal was determined, I started to look for the layout of related applications and the layouts of common Activity, like login, register, profiles. With the help of them, I tried to unify my own style. Hence, I went on to draw some sketches.
+                    </p>
+                    <img src="#" alt="research image">
+                </div>
+
+                <div>
+                    <h2>Draft Sketch:</h2>
+                    <p>
+                        Doing sketches is an important step before I started to do my coding work. With the drafts, I could know how many activities would be in my application, how the activities and Java classes work with each other, and required functionalities were met in which activities.  
+                    </p>
+                    <img src="#" alt="draft sktech image">
+                </div>
+
+                <div>
+                    <h2>Coding and Debugging:</h2>
+                    <p>
+                        Coding is a funny process which can bring us senses of achievement, except meeting bugs. During the processing of coding, I met countless problems caused by various reasons, like the difference between Windows and Mac, the different versions of tutorials online and mine, and so on. However, it’s also an amazing experience when the debugging was done.                    </p>
+                    <img src="#" alt="coding & debugging image">
+                </div>
+
+                <div>
+                    <h2>Final Results:</h2>
+                    <p>
+                        After 6 weeks‘ hard work, my application was completed. Users can use the application to record what they want to remember. In addition, it can also detect the environment nearby and give suggestions to users according to the detected values.                     </p>
+                    <img src="#" alt="result image">
+                </div>
+
+                <div>
+                    <h2>Challenge: </h2>
+                    <p>
+                        As I mentioned above, the problem I met during my brainstorm step was the first challenge. And then, I spent a great amount of time on the part of SQLite database. To solve related problems, I watched two series of tutorial videos. Because of it, I knew that I should continue to learn more and practice more.                    </p>
+                </div>
+            </section>
+        </section>
+        <!-- End of Project section --> 
+
+
+        <div onclick="backHome()" class="back-area">
+            <span>Go back</span>
+            <div class="back-bar"></div>
+        </div>
+        
+        <script>
+            function backHome() {
+                window.location = "index.html";
+            }
+        </script>
+    </section>
+
 </body>
 
 </html>

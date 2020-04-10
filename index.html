@@ -4,32 +4,295 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Norris He Portfolio</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/processing.js"></script>
 </head>
 
-<body class="pop-up">
-    <div id="pop-up">
-        <img src="img/student.png">
-        <div class="container">
-          <h1>Hi! I'm Norris.</h1>
-          <p>Interested in being a front-end developer</p>
-          <!-- <input type="email" placeholder="email" required> -->
-          <button onclick="goToPortfolio()">Go to portfolio</button>
-        </div>
-      </div>
+<body>
+    <section id="phone-layout" class="phone-layout">
 
-      <!-- Button go to orderComplete page -->
+        <!-- These codes make the layout look like a phone -->
+        <div class="grid">
+            <div class="grid-col-1of5 time"><p>12:00</p></div>
+            <div class="grid-col-3of5 camera-part"></div>
+            <div class="grid-col-1of5 icons grid">
+                    <div class="signal grid-col-1of3">
+                        <img src="img/internet.png" alt="1">
+                    </div>
+                    <div class="wifi grid-col-1of3">
+                        <img src="img/wifi.png" alt="2">
+                    </div>
+                    <div class="battery grid-col-1of3">
+                        <img src="img/battery1.png" alt="3">
+                    </div>                          
+            </div>
+        </div>
+
+        <div class="decoration"></div>
+        <div class="dot"></div>
+        <!-- Codes above create the phone layout-->
+
+
+        <!-- Start of the introduction section -->
+        <section id="notice-section" class="notice-section">
+            <div class="notice-up">
+                <!-- https://www.flaticon.com/free-icon/man_1864509 -->
+                <img class="logo" src="img/me.png" alt="Message logo">
+                <span class="message">MESSAGE</span>
+                <span class="now">now</span>
+            </div>
+            <div class="notice-bottom">
+                <span>Norris He</span>
+                <p>Welcome to Norris's portfolio. I dream to be a Front-end developer.</p>
+            </div>
+        </section>
+        <!-- End of the introduction section -->
+
+
+        <!-- Start of the three navigation icons -->
+        <section id="main-nav" class="grid main-nav">
+            <div id="bio-nav" class="grid-col-1of3 bio-nav">
+                <img onclick="onClickAboutMe()" src="img/twitter.png" alt="about me icon">
+                <span>About Me</span>
+            </div>
+            <div id="project-nav" class="grid-col-1of3 project-nav">
+                <img onclick="onClickProject()" src="img/sun.png" alt="project icon">
+                <span>Projects</span>
+            </div>
+            <div id="contact-nav" class="grid-col-1of3 contact-nav">
+                <img onclick="goToContact()" src="img/student.png" alt="contact icon">
+                <span>Contact</span>
+            </div>
+        </section>
+        <!-- End of the three navigation icons -->
+
+
+        <!-- Start of the about me section -->
+        <section id="about-me-section" class="about-me-section">
+            <div class="grid about-me-content">
+                <div class="grid-col-1of2 img-side gird">
+                    <img class="me" src="img/me.png" alt="about me image">
+                    <table class="mark-table">
+                        <tr>
+                            <th>Code</th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                        </tr>
+                        <tr>
+                            <th>Animation</th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                        </tr>
+                        <tr>
+                            <th>Design</th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                        </tr>
+                        <tr>
+                            <th>Illustraion</th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+                            <th><img class="star" src="img/sun.png" alt="marking star"></th>
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="grid-col-1of2 paragraph-side">
+                    <h2>About Me</h2>
+                    <p>
+                        I would like to create meaningful front-end works since it can not only bring 
+                        convience and pleasure, but also connect the users. To achieve my goal, I learned 
+                        related knowlege and skills in my major, like HTML, CSS, Java, JavaScript. Then, I found 
+                        that's not enough, so I also learned other languages, like Assembly x86-64, C, C++, 
+                        Python, to improve my understanding of programing.
+                    </p>
+                    <p>
+                        Apart from the studing and working, I love basketball and football games. I'm a big fan of 
+                        NBA and NFL. Besides, I like video games, music, and movies.
+                    </p>
+                </div>
+                <div onclick="onClickBack()" class="back-area">
+                    <span>Go back</span>
+                    <div class="back-bar"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End of the about me section -->
+
+
+        <!-- Start of the project section -->
+        <section id="project-section" class="project-section">
+            <h2>Project</h2>
+            <div class="grid icon-area">
+                <div class="grid-col-1of2 project-section-left">
+                    <a href="project1.html">
+                        <img src="img/me.png" alt="project 1 icon">
+                    </a>
+                    <span>Alien </span>
+                </div>
+                <div class="grid-col-1of2 project-section-left">
+                    <a href="project2.html">
+                        <img src="img/me.png" alt="project 2 icon">
+                    </a>
+                    <span>Manager </span>
+                </div>
+            </div>
+            <div onclick="onClickBack()" class="back-area">
+                <span>Go back</span>
+                <div class="back-bar"></div>
+            </div>
+        </section>
+        <!-- End of the project section -->
+
+
+        <!-- Start of the contact section -->
+        <section id="contact-section" class="contact-section grid">
+            <div class="grid-col-1of3 style-guide">
+                <img src="img/twitter.png" alt="style guide">
+                <span>Style Guide</span>
+            </div>
+            <div class="grid-col-1of3 citation">
+                <img src="img/twitter.png" alt="citation">
+                <span>Citation</span>
+            </div>
+            <div class="grid-col-1of3 github">
+                <img src="img/twitter.png" alt="github">
+                <span>Github</span>
+            </div>
+        </section>
+        <!-- End of the contact section -->
+
+    </section>
+
+
+
+    <!-- Start of JavaScript -->
     <script>
-      function goToPortfolio() {
-          window.location = "portfolio.html";
-      }
+        let showNav = true;
+        let showAboutMe = false;
+        let showProject = false;
+
+        function onClickAboutMe() {
+            showNav = false;
+            showAboutMe = true;
+            showProject = false;
+
+            if (showNav == true) {
+                document.getElementById("notice-section").style.display = 'block';
+                document.getElementById("main-nav").style.display = 'flex';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showAboutMe == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'block';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showProject == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'block';
+            }           
+        }
+
+        function onClickProject() {
+            showNav = false;
+            showAboutMe = false;
+            showProject = true;
+            if (showNav == true) {
+                document.getElementById("notice-section").style.display = 'block';
+                document.getElementById("main-nav").style.display = 'flex';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showAboutMe == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'block';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showProject == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'block';
+            } 
+        }
+
+        function onClickBack() {
+            let showNav = true;
+            let showAboutMe = false;
+            let showProject = false;
+            if (showNav == true) {
+                document.getElementById("notice-section").style.display = 'block';
+                document.getElementById("main-nav").style.display = 'flex';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showAboutMe == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'block';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showProject == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'block';
+            } 
+        }
+
+        if (showNav == true) {
+                document.getElementById("notice-section").style.display = 'block';
+                document.getElementById("main-nav").style.display = 'flex';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showAboutMe == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'block';
+                document.getElementById("project-section").style.display = 'none';
+            }
+
+            if (showProject == true) {
+                document.getElementById("notice-section").style.display = 'none';
+                document.getElementById("main-nav").style.display = 'none';
+                document.getElementById("about-me-section").style.display = 'none';
+                document.getElementById("project-section").style.display = 'block';
+            } 
     </script>
+
+    <script>
+        function goToContact() {
+            window.location = "#contact-section";
+        }
+    </script>
+    <!-- End of JavaScript -->
+
 </body>
 
 </html>
